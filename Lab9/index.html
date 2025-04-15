@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab9</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .menu {
+            background-color: #1e90ff; /* Màu xanh dương */
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+        }
+        .menu a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .menu a:hover {
+            background-color: #104e8b; /* Xanh dương đậm hơn khi hover */
+        }
+        .menu a.active {
+            background-color: #104e8b;
+        }
+        .content {
+            margin-top: 60px; /* Khoảng cách để nội dung không bị che bởi menu */
+            padding: 20px;
+        }
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <a href="#canvas" onclick="document.getElementById('content-frame').src='canvas/index.html'">Canvas</a>
+        <a href="#clock" onclick="document.getElementById('content-frame').src='clock/index.html'">Clock</a>
+        <a href="#dice" onclick="document.getElementById('content-frame').src='dice/index.html'">Dice</a>
+    </div>
+
+    <div class="content">
+        <iframe id="content-frame" src="canvas/index.html"></iframe>
+    </div>
+</body>
+</html>
