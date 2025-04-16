@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e0e0e0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+form {
+	border: 2px solid #333;
+	border-radius: 8px;
+	background-color: #fff;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 1.0);
+	margin-bottom: 20px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form table {
+    width: 48px;
+    height: 48px;
+    border-spacing: 15px;
+}
+
+input[type="text"] {
+	height: 40px;
+    font-size: 16px;
+    text-align: right;
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    width: 100%;
+    box-sizing: border-box;
+	
+}
+
+input[type="button"] {
+	width: 48px;
+    height: 48px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+	background-color: #007bff;
+	color: white;
+}
+input[name="btnClear"], input[name="btnClearEntry"]{
+	background-color: #dc3545;
+    width: 50px;
+}
+
+input[name="btnEquals"]{
+	background-color: green;
+	width: 110px;
+}
